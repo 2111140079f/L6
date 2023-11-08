@@ -1,0 +1,9 @@
+<h1>商品追加</h1>
+
+
+<%= form_for @cart_item ,url: {action: :create} do |f| %>
+    <%= f.label :quantity, "数量：" %>
+    <%= f.text_field :quantity %>
+    <%= f.submit "商品を登録する" %>
+<% end %>
+
